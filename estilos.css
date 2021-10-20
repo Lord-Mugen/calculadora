@@ -1,0 +1,144 @@
+h1 {
+    text-align: center;
+    padding: 15px;
+    margin: 15px;                         /*Titulo*/
+    background-color: #fa6800;
+    box-shadow: 17px 15px 15px #00000090;
+}
+
+
+
+* {
+    font-family: 'Fraunces', sans-serif;
+}
+
+
+body {
+    margin: 0;
+    background-color: #f4a460;    /*Fondo*/
+}
+
+
+.container { 
+    display:flex;
+    justify-content: center;      /*cuerpo de la calculadora*/
+    align-items: center;
+    height: 100vh;
+    
+    
+}
+.calculadora{
+    background-color: #fffcff;                  /*cuerpo de la calculadora*/
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow:15px 10px 0px 5px #00000050;
+    padding-top: 80px;
+}
+
+.grupo-botones {
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: 160px repeat(5, 60px); 
+   
+}
+
+.botones-arriba{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #d6d7d7;
+}
+
+
+button {
+    margin:6px;
+    padding: 0px;
+    border-radius: 13px;             /*la forma de los botones y todo*/
+    font-size: 1.5em;                
+    border: none;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 10px -3px #00000050, -5px -5px 15px 3px #e9ecef50;
+   
+}
+
+
+button:active { 
+    background-color: #f8f9fa; /*el cambio de color de los botones*/
+}
+
+
+/*button:focus {
+    outline: none;
+} no la necesito porque no me da outline */
+
+
+/* .col-2 { 
+    grid-column: span 2; no estoy usando botones con dos espacios 
+}*/
+
+
+
+.display {
+    grid-column: 1 / -1;
+    padding: 1px;
+    display: flex;
+    /* margin: 10px 10px 10px; */
+    flex-direction: column;
+    align-items:flex-end;              /*encargado de la pantalla*/
+    border-radius: 15px;
+    text-align: right;
+    justify-content:space-between;
+    word-break: break-all;
+    
+    
+}
+
+.operador { 
+    color: #00fa9a;   /*colores de operadores*/
+    background-color: #fffcff;
+
+}
+
+.numero { 
+    color: #000000; /*colores de los numeros*/
+    background-color: #f5f5f560;
+}
+
+
+
+
+.backspace{
+    color: #00fa9a ;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    background: none;                  /*cuerpo de la calculadora*/
+    box-shadow: none;
+    display: inline-block;
+    text-align: right;
+
+}
+
+
+
+.history{
+    color: #dcdcdc;
+    box-shadow: none;
+    display: inline-block;
+    text-align: left;
+    
+
+}
+
+#valor-actual{
+    font-size: 1.5em;
+}
+
+#valor-anterior{
+    font-size: 1.5em;
+}
+
+
+
+
+ 
+ 
